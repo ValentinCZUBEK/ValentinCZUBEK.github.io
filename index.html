@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Mon Portfolio</title>
+    </head>
+    <body>
+    
+        <header>
+            <div class="logo">Mon Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#mecontacter">Me Contacter</a></li>
+                    <!-- Ajoute d'autres catégories ici -->
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <div id="projets-container"></div>
+        </section>
+        
+        <template id="projet-template">
+            <div class="projet">
+                <h3 class="titre"></h3>
+                <img class="image" alt="Image du projet">
+                <p class="description"></p>
+                <button class="en-savoir-plus">En savoir plus</button>
+            </div>
+        </template>
+
+        <footer>
+            <p>Auteur : Valentin CZUBEK</p>
+            <p>Dernière mise à jour : [Date]</p>
+        </footer>
+    
+    </body>
+</html>
