@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #333;
     padding: 1rem;
     color: white;
     display: flex;
@@ -25,17 +25,20 @@ footer {
     align-items: center;
 }
 
+
 .logo {
     font-size: 1.5em;
 }
 
 section#projets {
-    padding: 20px;
+    padding: 2rem;
 }
 
 .projet {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column; /* Par défaut, la disposition en colonne */
 }
 
 .titre {
@@ -43,13 +46,18 @@ section#projets {
 }
 
 .image {
-    width: 100%;
+    width: 100%;   
+}
+
+.groupe_image_bouton {
+    position: relative;
     height: auto;
     display: block;
 }
 
 .description {
     margin-left: 1rem;
+    margin-right: 1rem;
     flex: 1;
 }
 
@@ -67,6 +75,13 @@ section#projets {
     transition: opacity 0.3s;
 }
 
+
+.ensemble_image_bouton_description {
+    width: 100%;
+    display: flex;
+}
+
+
 .projet:hover .en-savoir-plus {
     opacity: 1;
 }
@@ -83,4 +98,32 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
+}
+
+/* Ajout pour la disposition en ligne pour les écrans larges */
+@media screen and (min-aspect-ratio: 1/1.5) {
+    .ensemble_image_bouton_description {
+        flex-direction: row;
+    }
+
+    .groupe_image_bouton {
+        width: 40%;
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+/* Ajout pour la disposition en ligne pour les écrans étroits */
+@media screen and (max-aspect-ratio: 1/1.5) {
+    .ensemble_image_bouton_description {
+        flex-direction: column;
+    }
+    .groupe_image_bouton {
+        width: 100%;
+    }
 }
