@@ -115,10 +115,30 @@ nav a {
     margin-left: 2rem;
     font-size: 2rem;
     line-height: 4rem;
-  }
+}
   
+.email {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.telephone {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.adresse {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
 
-  
+.LinkedIn {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
 .image_cv{
     width: 100%;
     height: auto;    
