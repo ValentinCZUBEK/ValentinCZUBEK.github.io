@@ -1,0 +1,180 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 1.5em;
+}
+
+section#projets {
+    padding: 2rem;
+}
+
+.projet {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Par défaut, la disposition en colonne */
+}
+
+.titre {
+    margin-left: 1rem;
+    font-size: 4rem;
+}
+
+.image {
+    width: 100%;   
+}
+
+.groupe_image_bouton {
+    position: relative;
+    height: auto;
+    display: block;
+}
+
+.description {
+    margin-right: 2rem;
+    flex: 1;
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.en-savoir-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.7s;
+    height: 6rem;
+    width: 16rem;
+    font-size: 2rem;
+}
+
+
+.ensemble_image_bouton_description {
+    width: 100%;
+    display: flex;
+}
+
+.groupe_image_bouton:hover .en-savoir-plus {
+    opacity: 1;
+}
+
+h2 {
+    margin-left: 2rem;
+    font-size: 4rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.passion {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+  
+.email {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.telephone {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.adresse {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.LinkedIn {
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.image_cv{
+    width: 100%;
+    height: auto;    
+}
+
+
+footer {
+    margin-left: 0rem;
+
+}
+/* Ajout pour la disposition en ligne pour les écrans larges */
+@media screen and (min-aspect-ratio: 1/1.5) {
+    .ensemble_image_bouton_description {
+        flex-direction: row;
+    }
+
+    .groupe_image_bouton {
+        width: 50%;
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+/* Ajout pour la disposition en ligne pour les écrans étroits */
+@media screen and (max-aspect-ratio: 1/1.5) {
+    .ensemble_image_bouton_description {
+        flex-direction: column;
+    }
+    .groupe_image_bouton {
+        width: 100%;
+    }
+}
+
+
