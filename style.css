@@ -44,6 +44,7 @@ section#projets {
 
 .titre {
     margin-left: 1rem;
+    font-size: 4rem;
 }
 
 .image {
@@ -57,9 +58,11 @@ section#projets {
 }
 
 .description {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     flex: 1;
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
 
 .en-savoir-plus {
@@ -85,20 +88,15 @@ section#projets {
     display: flex;
 }
 
-.description {
-    border-color: red;
-}
-
-
 .groupe_image_bouton:hover .en-savoir-plus {
     opacity: 1;
 }
 
-
-.image_cv{
-
-    width: 60%;
+h2 {
+    margin-left: 2rem;
+    font-size: 4rem;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -113,12 +111,24 @@ nav a {
     color: white;
 }
 
-p {
+.passion {
+    margin-left: 2rem;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   
 
+  
+.image_cv{
+    width: 100%;
+    height: auto;    
+}
+
+
+footer {
+    margin-left: 0rem;
+
+}
 /* Ajout pour la disposition en ligne pour les écrans larges */
 @media screen and (min-aspect-ratio: 1/1.5) {
     .ensemble_image_bouton_description {
@@ -146,3 +156,5 @@ p {
         width: 100%;
     }
 }
+
+
