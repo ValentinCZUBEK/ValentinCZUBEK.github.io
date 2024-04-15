@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 projetClone.querySelector('.image').src = projetData.image;
                 projetClone.querySelector('.description').textContent = projetData.description;
                 projetClone.querySelector('.en-savoir-plus').addEventListener('click', () => {
-                    // Ajoute ici ce que tu veux faire lorsque le bouton est cliqué
+                    // Action lorsque le bouton est cliqué
                     alert(`En savoir plus sur ${projetData.titre}`);
                 });
 
@@ -21,3 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Erreur lors du chargement des données :', error));
 });
+
+
+
